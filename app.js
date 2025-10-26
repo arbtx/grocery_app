@@ -4,11 +4,13 @@ import fastify from "fastify";
 import { PORT } from "./SRC/config/config.js";
 import { registerRoutes } from "./SRC/routes/index.js";
 import fastifySocketIO from "fastify-socket.io";
+import { buildAdminRouter } from "./SRC/config/setup.js";
 
 const start = async () => {
   console.log("process.env.MONGO_URL:", process.env.MONGO_URL);
   await connectDB(process.env.MONGO_URL);
   const app = fastify();
+
   app.register(fastifySocketIO, {
     cors: {
       origin: "*", // Allow all origins
@@ -20,6 +22,8 @@ const start = async () => {
 
   await registerRoutes(app);
 
+  await buildAdminRouter(app);
+  
   app.listen({ port: PORT, host: "0.0.0.0" }, (err, address) => {
     if (err) {
       console.error(err);

@@ -1,45 +1,16 @@
 export const categories = [
-    {
-      name: "Atta, Rice & Dal",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\atta_rice_dal.png",
-    },
-    {
-      name: "Dry Fruits & Nuts",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\dry_fruits_nuts.png",
-    },
-    {
-      name: "Oils and Ghee",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\oils_ghee.png",
-    },
-    {
-      name: "Biscuits and Namkeen",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\Biscuits_namkeen.png",
-    },
-    {
-      name: "Toiletries",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\toiletries.png",
-    },
-    {
-      name: "Spices & Masalas",
-      image:
-        "C:\\Users\\Admin\\Desktop\\Server\\Images for app\\spices_masalas.png",
-    },
-    {
-      name: "Ata, Rice & Dal",
-      image:
-        "https://res.cloudinary.com/dponzgerb/image/upload/v1723444869/category/flyjbsigiuxsd4pbwpjb.png",
-    },
-    {
-      name: "Protein Rich Foods",
-      image:
-        "https://res.cloudinary.com/dponzgerb/image/upload/v1723444869/category/pfbuktnsxdub5njww7tj.png",
-    },
-  ];
+  {
+    name: "Atta, Rice & Dal",
+    image:
+     "https://res.cloudinary.com/dponzgerb/image/upload/v1723444869/category/flyjbsigiuxsd4pbwpjb.png",
+ },
+ {
+    name: "Protein Rich Foods",
+    image:
+      "https://res.cloudinary.com/dponzgerb/image/upload/v1723444869/category/pfbuktnsxdub5njww7tj.png",
+  },
+
+];
   
   export const products = [
     {

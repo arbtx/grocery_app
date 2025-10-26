@@ -1,10 +1,10 @@
 import "dotenv/config.js";
 import mongoose from "mongoose";
 import { Category, Product } from "./SRC/models/index.js";
-import { categories, products } from "./SRC/data/seedData.js";
+import { categories, products } from "./seedData.js";
 
 
-async function seedDatabse() {
+async function seedDatabase() {
     try {
         await mongoose.connect(process.env.MONGO_URL);
         await Product.deleteMany({});
@@ -34,4 +34,4 @@ async function seedDatabse() {
     }
 }
 
-seedDatabse();
+seedDatabase();
